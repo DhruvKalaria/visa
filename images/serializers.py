@@ -16,3 +16,11 @@ class FileSerializerTour(serializers.ModelSerializer):
     'embassy_fee_reciept','insurance', 'bank_statement',
      'image', 'name','e_mail', 'dath_of_birth','sponser','phone','passport_number','address',
       'timestamp')
+
+class FileSerializerWork(serializers.ModelSerializer):
+  class Meta():
+    model = Tour
+    fields = ('legal_status', 'economic_activity', 'deed_for_company', 'passport',
+    'embassy_fee_reciept', 'insurance', 'bank_statement',
+    'image', 'name', 'e_mail', 'dath_of_birth', 'sponser', 'phone', 'passport_number', 'address',
+    'timestamp')
